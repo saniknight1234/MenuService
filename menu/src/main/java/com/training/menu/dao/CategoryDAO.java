@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CategoryDAO extends JpaRepository<CategoryEntity, Long> {
     CategoryEntity findByCategoryId(String categoryId);
+    void deleteByCategoryId(String id);
 }
